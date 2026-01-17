@@ -317,11 +317,21 @@ namespace custom
     vector <T> ::vector(const std::initializer_list<T>& l)
     {
 
-        // ---------- Brayden Jones Code to be completed ----------
-        data = new T[10];
+       // ---------- Brayden Jones Code to be completed ----------
+       data = nullptr;
+       numCapacity = 0;
+       numElements = 0;
 
-        numCapacity = 99;
-        numElements = 99;
+       if (l.size() == 0)
+           return;
+
+       numCapacity = l.size();
+       numElements = l.size();
+       data = new T[numCapacity];
+
+       size_t i = 0;
+       for (auto it = l.begin(); it != l.end(); ++it)
+           data[i++] = *it;
     }
 
     /*****************************************
@@ -362,10 +372,20 @@ namespace custom
     vector <T> ::vector(const vector& rhs)
     {
 
-        // ---------- Brayden Jones Code to be completed ----------
-        data = new T[10];
-        numCapacity = 99;
-        numElements = 99;
+       // ---------- Brayden Jones Code to be completed ----------
+       data = nullptr;
+       numCapacity = 0;
+       numElements = 0;
+
+       if (rhs.numElements == 0)
+           return;
+
+       numElements = rhs.numElements;
+       numCapacity = rhs.numElements;
+       data = new T[numCapacity];
+
+       for (size_t i = 0; i < numElements; i++)
+           data[i] = rhs.data[i];
     }
 
     /*****************************************
@@ -412,7 +432,23 @@ namespace custom
     void vector <T> ::resize(size_t newElements)
     {
 
-        // ---------- Brayden Jones Code to be completed ----------
+       // ---------- Brayden Jones Code to be completed ----------
+       // shrink: logically remove elements
+       if (newElements <= numElements)
+       {
+           numElements = newElements;
+           return;
+       }
+
+       // grow: ensure capacity
+       if (newElements > numCapacity)
+           reserve(newElements);
+
+       // value-initialize the new slots
+       for (size_t i = numElements; i < newElements; ++i)
+           data[i] = T();
+
+       numElements = newElements;
 
     }
 
@@ -420,8 +456,23 @@ namespace custom
     void vector <T> ::resize(size_t newElements, const T& t)
     {
 
-        // ---------- Brayden Jones Code to be completed ----------
+       // ---------- Brayden Jones Code to be completed ----------
+       // shrink: logically remove elements
+       if (newElements <= numElements)
+       {
+           numElements = newElements;
+           return;
+       }
 
+       // grow: ensure capacity
+        if (newElements > numCapacity)
+           reserve(newElements);
+
+       // fill new slots with provided value
+       for (size_t i = numElements; i < newElements; ++i)
+           data[i] = t;
+
+       numElements = newElements;
     }
 
     /***************************************
@@ -608,17 +659,66 @@ namespace custom
     vector <T>& vector <T> :: operator = (const vector& rhs)
     {
 
-        // ---------- Brayden Jones Code to be completed ----------
+       // ---------- Brayden Jones Code to be completed ----------
+       // Copy assignment
+       if (this == &rhs)
+           return *this;
 
-        return *this;
+       // If rhs is empty, become empty
+       if (rhs.numElements == 0)
+       {
+          delete[] data;
+          data = nullptr;
+          numElements = 0;
+          numCapacity = 0;
+          return *this;
+       }
+
+       // Need a bigger buffer: allocate new, then copy, then delete old
+       if (numCapacity < rhs.numElements)
+       {
+           T* newData = new T[rhs.numElements]; // new buffer with rhs's size
+
+           for (size_t i = 0; i < rhs.numElements; ++i)
+               newData[i] = rhs.data[i];
+
+           delete[] data;
+           data = newData;
+           numCapacity = rhs.numElements;
+           numElements = rhs.numElements;
+           return *this;
+       }
+
+       // Enough capacity: just copy into existing storage
+       for (size_t i = 0; i < rhs.numElements; ++i)
+           data[i] = rhs.data[i];
+
+       numElements = rhs.numElements;
+       // numCapacity stays the same
+       return *this;
     }
     template <typename T>
     vector <T>& vector <T> :: operator = (vector&& rhs)
     {
 
-        // ---------- Brayden Jones Code to be completed ----------
+       // ---------- Brayden Jones Code to be completed ----------
+       // Move assignment
+       if (this == &rhs)
+           return *this;
 
-        return *this;
+       delete[] data;
+
+       // Steal from rhs
+       data = rhs.data;
+       numCapacity = rhs.numCapacity;
+       numElements = rhs.numElements;
+
+       // And make rhs empty
+       rhs.data = nullptr;
+       rhs.numCapacity = 0;
+       rhs.numElements = 0;
+
+       return *this;
     }
 
 
