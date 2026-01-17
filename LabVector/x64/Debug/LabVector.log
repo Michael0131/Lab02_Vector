@@ -1,14 +1,14 @@
 ﻿  testVector.cpp
-F:\Winter_2026\CSE232\Lab02\testVector.h(137,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\jamga\Documents\Lab02_Vector\testVector.h(137,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-F:\Winter_2026\CSE232\Lab02\testVector.h(152,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\jamga\Documents\Lab02_Vector\testVector.h(152,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-F:\Winter_2026\CSE232\Lab02\testVector.h(168,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\jamga\Documents\Lab02_Vector\testVector.h(168,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-F:\Winter_2026\CSE232\Lab02\testVector.h(202,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\jamga\Documents\Lab02_Vector\testVector.h(202,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-  LabVector.vcxproj -> F:\Winter_2026\CSE232\Lab02\x64\Debug\LabVector.exe
+  LabVector.vcxproj -> C:\Users\jamga\Documents\Lab02_Vector\x64\Debug\LabVector.exe
