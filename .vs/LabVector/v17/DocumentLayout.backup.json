@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\",
+  "WorkspaceRootPath": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\jamga\\Documents\\Lab02_Vector\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|solutionrelative:vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\jamga\\Documents\\Lab02_Vector\\testVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\testSpy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|solutionrelative:testSpy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\spy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|solutionrelative:spy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\testVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|solutionrelative:testVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\jamga\\Documents\\Lab02_Vector\\unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{73A7474A-51B7-4287-ADF9-1156215BAD2C}|LabVector.vcxproj|solutionrelative:unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -22,47 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "testSpy.h",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\testSpy.h",
+              "RelativeDocumentMoniker": "testSpy.h",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\testSpy.h",
+              "RelativeToolTip": "testSpy.h",
+              "ViewState": "AgIAANQCAAAAAAAAAAAAAAIDAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T21:09:07.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "spy.h",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\spy.h",
+              "RelativeDocumentMoniker": "spy.h",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\spy.h",
+              "RelativeToolTip": "spy.h",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAANAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T21:05:40.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "unitTest.h",
-              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\unitTest.h",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\unitTest.h",
               "RelativeDocumentMoniker": "unitTest.h",
-              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\unitTest.h",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\unitTest.h",
               "RelativeToolTip": "unitTest.h",
               "ViewState": "AgIAAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-17T17:55:32.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T17:55:32.547Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "vector.h",
-              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\vector.h",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\vector.h",
               "RelativeDocumentMoniker": "vector.h",
-              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\vector.h",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\vector.h",
               "RelativeToolTip": "vector.h",
-              "ViewState": "AgIAAM4BAAAAAAAAAAAIwNsBAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAALoCAAAAAAAAAAAAAEUBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-16T21:53:05.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "testVector.h",
-              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\testVector.h",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\testVector.h",
               "RelativeDocumentMoniker": "testVector.h",
-              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab02_Vector\\testVector.h",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Winter 2026 Semester\\Designing Data Structures\\Lab02_Vector\\testVector.h",
               "RelativeToolTip": "testVector.h",
-              "ViewState": "AgIAALABAAAAAAAAAAAhwL8BAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAADMIAAAAAAAAAAAAAEQIAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-16T21:50:14.713Z",
               "EditorCaption": ""

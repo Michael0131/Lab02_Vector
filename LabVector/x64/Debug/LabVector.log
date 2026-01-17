@@ -1,14 +1,14 @@
 ﻿  testVector.cpp
-C:\Users\jamga\Documents\Lab02_Vector\testVector.h(137,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Winter 2026 Semester\Designing Data Structures\Lab02_Vector\testVector.h(137,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-C:\Users\jamga\Documents\Lab02_Vector\testVector.h(152,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Winter 2026 Semester\Designing Data Structures\Lab02_Vector\testVector.h(152,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-C:\Users\jamga\Documents\Lab02_Vector\testVector.h(168,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Winter 2026 Semester\Designing Data Structures\Lab02_Vector\testVector.h(168,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-C:\Users\jamga\Documents\Lab02_Vector\testVector.h(202,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Winter 2026 Semester\Designing Data Structures\Lab02_Vector\testVector.h(202,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'int *' of greater size
   (compiling source file 'testVector.cpp')
   
-  LabVector.vcxproj -> C:\Users\jamga\Documents\Lab02_Vector\x64\Debug\LabVector.exe
+  LabVector.vcxproj -> C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Winter 2026 Semester\Designing Data Structures\Lab02_Vector\x64\Debug\LabVector.exe
