@@ -289,10 +289,24 @@ namespace custom
     vector <T> ::vector(size_t num, const T& t)
     {
 
-        // ---------- James Gassaway Code to be completed ----------
-        data = new T[10];
-        numCapacity = 99;
-        numElements = 99;
+        // ---------- James Gassaway completed ----------
+        // Set data as null for now
+        data = nullptr;
+       
+       // Set capacity and elements to the correct values 
+       numCapacity = num;
+       numElements = num;
+
+       // If no data to build, we're done
+       if (num == 0)
+         return;
+
+       // Create the new data
+       data = new T[num];
+       // Create each element, set as t
+       for (size_t i = 0; i < num; i++) {
+          data[i] = t;
+       }
     }
 
     /*****************************************
@@ -305,6 +319,7 @@ namespace custom
 
         // ---------- Brayden Jones Code to be completed ----------
         data = new T[10];
+
         numCapacity = 99;
         numElements = 99;
     }
@@ -318,10 +333,24 @@ namespace custom
     vector <T> ::vector(size_t num)
     {
 
-        // ---------- James Gassaway Code to be completed ----------
-        data = new T[10];
-        numCapacity = 99;
-        numElements = 99;
+       // ---------- James Gassaway completed ----------
+       // Set data as a null ptr for now
+       data = nullptr;
+
+       // Set capacity and elements to the correct values 
+       numCapacity = num;
+       numElements = num;
+
+       // if no data to build, we're done
+       if (num == 0)
+         return;
+
+       // Create the new data
+       data = new T[num];
+       // Create each element, set as 0
+       for (size_t i = 0; i < num; i++) {
+          data[i] = 0;
+       }
     }
 
     /*****************************************
@@ -406,9 +435,25 @@ namespace custom
     template <typename T>
     void vector <T> ::reserve(size_t newCapacity)
     {
+         // ---------- James Gassaway completed ----------
+         // No need to reserve if there is enough capacity already
+         if (numCapacity >= newCapacity)
+             return;
 
-        // ---------- James Gassaway Code to be completed ----------
-        numCapacity = 99;
+         // Reserve a new capacity and make a pointer for it
+         T* newData = new T[newCapacity];
+
+         // Move the old data into the new location
+         for (auto i = 0; i < numElements; i++) {
+             new ((void*)(newData + i)) T(std::move(data[i]));
+         }
+         
+         // Delete the old data, and store the location of the new container
+         delete[] data;
+         data = newData;
+
+         // Adjust the capacity
+         numCapacity = newCapacity;
     }
 
     /***************************************
@@ -420,8 +465,28 @@ namespace custom
     template <typename T>
     void vector <T> ::shrink_to_fit()
     {
+       // ---------- James Gassaway completed ----------
 
-        // ---------- James Gassaway Code to be completed ----------
+       // No need to shrink if elements and capacity are the same
+       if (numElements == numCapacity)
+         return;
+       // Make a new data set
+       T* newData = nullptr;
+       // Move the data into the data set if there's data to be moved
+       if (numElements > 0) {
+          // Allocate a new data contianer
+          newData = new T[numElements];
+          // Move each item into the data
+          for (auto i = 0; i < numElements; i++) {
+             new ((void*)(newData + i)) T(std::move(data[i]));
+          }
+       }
+
+       // Delete the old data, and point the data to the newData spot
+       delete[] data;
+       data = newData;
+       // Adjust the capacity
+       numCapacity = numElements;
 
     }
 
@@ -507,17 +572,29 @@ namespace custom
     void vector <T> ::push_back(const T& t)
     {
 
-        // ---------- James Gassaway Code to be completed ----------
+        // ---------- James Gassaway completed ----------
+       if (numCapacity == 0)
+          reserve(1);
 
+       if (numElements >= numCapacity)
+          reserve(numCapacity * 2);
+
+       new ((void*)(&data[numElements++])) T(std::move(t));
     }
 
     template <typename T>
     void vector <T> ::push_back(T&& t)
     {
+        // ---------- James Gassaway completed ----------
 
 
-        // ---------- James Gassaway Code to be completed ----------
+       if (numCapacity == 0)
+          reserve(1);
 
+       if (numElements >= numCapacity)
+          reserve(numCapacity*2);
+
+       new ((void*)(&data[numElements++])) T(std::move(t));
     }
 
     /***************************************
